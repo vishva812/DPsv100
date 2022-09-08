@@ -1,0 +1,424 @@
+Azure Data Lake Analytics.
+What it is? Why you want to use it?
+"And, of course, how you can make it work for you?"
+All that and more when you join me coming up now.
+"Hello, everybody."
+"My name is Adam Gordon, an edutainer here at ITProTV"
+back with another fun and exciting episode
+"in our ‘What Is Azure?’ series,"
+"where we take on different Azure Features and Services,"
+and explain them to you using three questions:
+‘What is the Azure feature of service?’
+‘Why would you want to use it in your organization?’
+"and of course, ‘How it can add value for you"
+and how you can make it work really to your benefit?’
+"When we think about the Azure Data Lake Analytics offering,"
+"which is what we're going to take a look at in this episode,"
+we're going to answer those questions
+"by talking about massive data scalability,"
+"massive data processing,"
+and the ability to take data from anywhere in any format
+and put it to work.
+This is what Azure Data Lake Analytics does for us.
+So let's talk about
+what the Azure Data Lake Analytics offering really is all about.
+"And I'm going to underline the word analytics here,"
+"because first and foremost, it's about analyzing data."
+"Our ability to take massive amounts of data, petabytes of data,"
+"as a matter of fact, potentially,"
+"and use our capability to analyze,"
+"to ask questions, to extract value from that data."
+"But to do so in some very specific ways,"
+"showing the users that are going to consume that data,"
+"the hidden meaning,"
+"and as a result, the hidden value that that data represents."
+"So when we think about what Azure Data Lake Analytics is,"
+it is a massive storage and massive scale query engine
+"that allows us to make sense of our data in any format,"
+using any kind of data.
+"In other words, coming from anywhere,"
+"looking and feeling like anything, and then using that data"
+to be able to understand the true meaning
+that that information is going to represent our organization.
+"Now in terms of where that data lives, where we can put it,"
+"where we can work with it, we've got some different options here."
+"We have Azure Storage Blobs,"
+"which is traditionally one of the many ways that we would,"
+"and probably more often and not the default way,"
+where we would store data.
+So we could certainly make our data workforce
+by putting in an Azure Storage Blobs.
+"We can use the Azure SQL Database,"
+traditional SQL-based database.
+"Microsoft makes that available to us in the Azure platform,"
+and we can host our data there.
+We can have a SQL Database
+"running an Azure on a Virtual Machine,"
+if we don't want to use the Azure base SQL DB directly.
+We can use Azure SQL Data Warehouses.
+"Massive scalability requires data warehouses to work with data,"
+and we have that capability.
+And Data Lake Stores can also be used
+in order to provide additional capabilities.
+"So at scale, we have lots of different storage options."
+And so when we think about
+"what the Azure Data Lake Analytics capability provides for us,"
+"it is this massive engine that allows us to take in data,"
+"unstructured or structured,"
+"and then work with it across these different storage areas,"
+asking questions that lead us to better understand
+and value that data.
+"It really moves us into our next question, which is,"
+“Why would you want to use this kind of a solution?’
+"Well, when you think about the fact"
+"that we traditionally most organizations do have a lot of data,"
+but a lot is a relative term.
+"I mentioned petabytes of data just a few minutes ago,"
+as we started discussing this.
+"A petabyte of data is a very, very, very large amount, so large,"
+"as a matter of fact, that I can't do justice to it"
+on the lightboard in front of us here.
+"I'm going to ask you to imagine the largest amount of something,"
+"whether it's jelly beans, whether it's wine bottle corks,"
+whether it's anything you can imagine that's relatively small.
+And imagine that largest amount
+"you can possibly, possibly imagine."
+"And then double that, double that, Double that,"
+"double that and double that again,"
+and you wouldn't even be close
+to what a petabyte of data really means.
+"So as a result, we're talking about scale data"
+that comes in from perhaps millions of different endpoints
+that is going to flow into a system
+"like the Azure Data Lake Analytics capability,"
+and then be available to us.
+"Imagine the Internet of things, IoT kind of endpoint sensors"
+that we often would think about
+"in manufacturing environments,"
+"in remote monitoring environments, today."
+"Maybe we've got an oil pipeline,"
+"and that's 1000 or more miles long,"
+"transporting oil and every 100 feet, we have some sort of sensor"
+that's embedded in the pipeline to tell us
+"how much oil is flowing, if it's at the right temperature,"
+"at the right pressure, if there's a leak, all those things."
+You could imagine the volume of data
+"we would generate from one of those sensors,"
+let alone one every 100 feet over 1000 miles.
+Take all that data every 5 or 10 seconds
+"as we monitor 24 hours a day,"
+"and then dump that into a system,"
+and that's exactly what we will be seeing here.
+"All that data would be flowing in,"
+"coming in, right to this system."
+But the reality is it first has to flow in
+"and come into one of our storage areas,"
+"wherever that would be, as we've talked about."
+"And then, as we have that data arriving,"
+we're then able to create a storage capability
+that will just massively provide for that storage.
+"And then, as you're going to see,"
+"when we talk about how we do this,"
+an Azure Data Lake Analytics Account is created in Azure.
+And that's really just an account
+that represents our ability to use this offering.
+And that account is then going to be targeted at our data
+in one or more of these areas.
+And so what we would do is essentially just create an opportunity
+to create a connection here
+that represents our ability to consume the data.
+"And then, through the process of asking a question,"
+"being able to essentially create a query,"
+"and that query can be of one of several types,"
+"we're then able to make sense of that data, derive meaning,"
+and ultimately then show that value.
+"When we talk about the querying,"
+the querying is really one of the most important elements
+of why this will be so important to us
+because we can query using different languages.
+We can use our ability to query.
+"In other words, can be driven"
+"by different language choices we make,"
+"whether it is R, whether it is .NET,"
+"whether ultimately it is U-SQL, what we call U-SQL,"
+which is the use of the SQL language
+"Structured Query Language, combined with the C language"
+giving us maximum flexibility and power.
+We're able to bring that to bear and derive that value
+using the Azure Data Lake Analytics solution.
+I'm going to take us on a quick little tour and show
+is how we set this up.
+And I'm going to run a sample query for you showing you
+just how easy it is to understand this data at scale.
+"Hello, everybody."
+Time for us to talk about the ‘How?’
+"Really exciting stuff, whenever we talk about ‘How?’"
+We're going to jump into the Azure portal.
+We're going to take a look at
+how we spin up that Data Lake Analytics account
+and ultimately run that sample query I was talking about
+to show you how quickly we can actually go through a data set
+understanding what the value is in there.
+I'm going to zoom in so you can see that I've searched for
+the Data Lake service in the All Services area.
+And I'm about to highlight
+and click on the Data Lake Analytics option.
+Let's just zoom in.
+"As you can see that real quick,"
+you can see I'm in the all services area.
+"Started searching comes up at the top,"
+and we're going to click on that.
+"And when we do, we're going to get the option"
+to see the Data Lake Analytics accounts
+that may already be set up.
+Now I've set one up just so that we can get through
+that part of the process and show you the actual query.
+But I'm going to walk you through quickly
+"how we add an account here, just so you understand that."
+I'm going to go ahead and show you
+that we have an Add option
+right up underneath the Data Lake Analytics element.
+You can see my courtneycdb account is already there.
+"It's set up as a Pay As You Go option, located in the East US,"
+a second or two data center in terms of Azure locations.
+"So I'm going to click at, so I'm going to go ahead do that."
+We get a relatively straightforward form that
+allows us to provide some basic information.
+Let's just scroll down
+and see what's going on in here really quickly.
+And you'll see we have to provide
+"the Project Details for our subscription,"
+the Resource Group we want to put this account into.
+"I've already created one called Data Lake,"
+and my account is in there.
+But you can either use an existing one
+by pulling down or creating new.
+Then the Data Lake Analytics details give a Name
+"for the service that we're going to use to create the account,"
+"the Location of the data center you want this in by region,"
+"the Existing Storage Subscription,"
+"again, you'd have that available,"
+or use one of several that are available to you.
+"And then, the Azure Data Lake Storage Gen1 account is created."
+That's our storage account.
+We saw that as one of the options up
+on the lightboard as we were looking.
+Either create new or use existing.
+And then our Pricing Package
+has to be selected default as Pay As You Go.
+That means you only pay for the services that you need
+"all at cart as you consume query time,"
+"run time, and analytics time"
+"as you run through the data sets, or Monthly Commitment"
+where you commit to a certain minimum charge
+that you're going to be billed
+even if you're not using that amount of capability.
+So you make your choices there.
+Our default is pay as you go.
+"We're going to use that in our demo,"
+just to show you what that looks like.
+And I'll show you what the pricing structure looks like here
+on the webpage in just a moment.
+"You come down here to the bottom, Review and Create,"
+Next is really just a summary of what you've put in this page.
+"Review and Create takes about a minute or so,"
+maybe a minute and a half to spin up.
+"And once you've done that,"
+"and you let it run, it will be available,"
+"and then ultimately, once the system is set up,"
+you'll be able to come here and click on that link.
+Now I'm going to click on that link and take us into the solution.
+"But before we go any further, let's just quickly pop out"
+and take a look at the pricing information that I mentioned.
+And you can see here that with
+"pay as you go details right down below,"
+that we can localize this for our Region and our Currency.
+"So you can look at this from anywhere in the world,"
+and you'll see that Analytics Units are billed at $2/hour
+under a Pay-As-You-Go option
+localized into whatever currency that may be appropriate for you.
+"And if you do Monthly Commitment Packages,"
+you have all the different options here.
+"Pricing varies and changes every so often,"
+so always look for the most recent information.
+But you can see the kind of levels
+"in terms of the analytics unit hours that you're buying,"
+"and the amount of the money,"
+the actual amount per month you're being billed as a result.
+"And you can see, as you scale up, you're paying less per hour,"
+but you're obviously going to still incur some significant costs.
+So just pay attention to that as you make your pricing decisions.
+"All right. So now that we've got our service set up,"
+"our account is available,"
+we see a relatively straightforward environment.
+Got a bunch of navigational elements over here
+that allow us to go in.
+"And look at Overview information, our Access Control,"
+"we have Settings down here,"
+where we can go in and look at Pricing and Properties.
+"And we can go in,"
+and we can get started with different quick Wizards
+that let us do a variety of things.
+We're not going to get into that level of detail right now.
+But what we're going to focus on over here is our dashboard
+that shows us the activities
+that we have incurred or are running.
+The amount of Estimated Cost based on billable usage
+and Jobs that are either currently running
+or have been run historically.
+"And right at the top,"
+"we have the ability to be able to add New Jobs in,"
+"View existing Jobs that may have been run,"
+and or look at some Sample Scripts and use the Data Explorer
+to see the output of Jobs that have already been run.
+Now I'm going to show you how to create a new Job
+"and put a query in, in just a second."
+But I've already run a Job.
+"And so if I want to do that, and take a look at the output,"
+I can go to Data Explorer.
+"And when I do that, I will see that I can go"
+"into my Storage Gen1 account that was created,"
+that was part of the wizard
+that we would run through to set the solution on.
+"And when I drill down inside of there,"
+"you'll see that I can get a listing of the information,"
+"including that .CSV file, which is the output of the Job,"
+the initial query that I just ran
+before we got started with the demo.
+"So I could see that information here,"
+seeing the actual outcome of the queries
+"that I run easily in a CSV file, and make that available"
+by sharing it with anybody who wants to see that data.
+So I just wanted you to be able to understand that
+and see that that is an option.
+I can view All Jobs that have been run
+and see the status of them.
+We could see the Job I ran right there was run pretty quickly
+and in a pretty simple fashion using the U-SQL query language.
+That's the U-SQL language
+combined with C that I was talking about.
+And that's what we're going to use for our demo as well.
+So let's create a brand new Job.
+I'm going to go ahead and click New job.
+And I get this interface that allows me to go in
+and give a name to the Job.
+"I'll do that, specify the Analytics units"
+"that I want to be able to use, and dedicate to this,"
+"tells me who the submitter, is my account is there."
+"And then, under More Options,"
+line number one is where I start to write my query.
+Now I can write the query right in here
+"using any of the supported languages that we want to,"
+".net or U- SQL etc., or I can have it prewritten"
+"and just paste it in, which is what I'm going to do."
+So let me just grab that query.
+So I already have it set up right here.
+"Oops, that's not the one."
+That's the one right there.
+"And I'm going to take that,"
+and I'm just going to paste it right in to here.
+"And when I do that,"
+"you could see it just adds the line numbers for me,"
+kind of truncating it out and putting it in.
+"I just have to make sure the syntax is correct,"
+"I have no errors, or things like that."
+But it's a relatively straightforward query
+using the U-SQL language.
+"And you can see, it's pretty simple language, easily understood,"
+looks very much like a standard language set of elements
+"I'm creating, like English would"
+or any normal language would in terms of readability.
+"It's very simple, very easy."
+I've declared some values there.
+"I've gone ahead and specified at my output line,"
+"a line number nine that I wanted to output to,"
+"in this case, data1.CSV, and I'm ready to go."
+"And so what I'm going to do is go ahead,"
+and I'm going to give this a name.
+Let's call this New job1.
+"So name it. And then I'm going to come over here,"
+and I'm going to be able to click Submit.
+Estimated Cost it tells me roughly how much that will be.
+It's going to look like it's going to be
+a very small amount of time and money.
+Hit Submit.
+We're going to let this run you're going to see
+it goes through a four-step process here.
+It'll take about 30 seconds or so to run through the cycle.
+It's preparing it right now and it gives me an update
+and updates and refreshes
+as this runs every 30 seconds approximately.
+And so we'll see this go through
+"and then once it is running, the query will start."
+It will then actually process the query run
+and then I will see the outcome
+and it will show me that it is successful.
+"And so once this all takes place,"
+"we're about to see a refresh here in like a second,"
+we'll see that we're almost all the way through already.
+And you could refresh yourself manually along the way
+"if you want to, or you can wait for that."
+"I can resubmit the query, I can reuse that script,"
+or even cancel the Job if necessary.
+It's running right now.
+"As soon as it finishes, I will see it is successful"
+because it's a really straightforward query and very simple.
+"And then I'll be able to look at the output in that .CSV file,"
+or I can just go on about my business doing other stuff
+and come back to it
+"and consume that output at some point, we'll see there."
+Shows me some basic information as it is processing and running.
+So it's just showing me graphically
+what it's doing and kind of laying it out.
+"So we get that nice capability in the File window or rather,"
+in the browser window off on the right-hand side as it popped in.
+We should get a refresh here.
+Let's just pop that in.
+It looks like we are done and successful.
+We can see here that our progress is 100%.
+"We are done all green circles,"
+white checks indicate everything is good.
+We like that we can see U-SQL was run
+and used down at the bottom.
+"And now what I can do, just come down to the bottom"
+"so you could see everything is there, lists everything."
+And we could see the output right there
+at the bottom of the visual flow.
+Shows me that it's there.
+I can click right there if I want just to be able
+to pull up the output of that file and see
+that it really just took those two account names I had
+with the dollar values
+and put them into a table and made them available for me.
+File Preview shows you that.
+"Imagine this at scale with hundred thousand elements,"
+or a million or perhaps a billion different data points
+and being able to then generate a table
+"and interact with that data,"
+going ahead and downloading it and using it as necessary.
+That's really the value ultimately here
+of the Azure Data Lake Analytics Solution.
+"That's how we would use this,"
+but just really massively at scale as we add our data sets in.
+"So when we think about Azure Data Lake Analytics,"
+"we think about this capability,"
+hopefully its capability makes sense for you
+and your organization.
+"If it doesn't, no problem."
+"There's many other Azure features and services that well,"
+we continue to go over them and explore them
+"in our ‘What Is Azure?’ serial,"
+invite you to come back and spend more time with these.
+"We'll come back with additional episodes,"
+"always looking at cutting edge features,"
+solutions and capabilities
+that are going to potentially be a value and interest you.
+"I'll be back with more of those, but until I am,"
+I'm going to wish you happy Azuring
+and remind you as always do check me out over at ITProTV
+if want to see more about Azure Data Lake Analytics
+and/or any of the other Azure features
+and services we go over here
+because I have training that I put together
+and host on ITProTV that covers all of this and so much more.
+I'll see you soon.
